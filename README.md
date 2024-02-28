@@ -1,5 +1,7 @@
 # MACAL
 
+## Installation
+
 ```.sh
 $ conda create --name MACAL python=3.9
 $ pip install requirements.txt
