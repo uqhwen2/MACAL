@@ -3,7 +3,7 @@
 ## Installation
 
 ```.sh
-$ git clone 
+$ git clone https://github.com/uqhwen2/MACAL.git
 $ conda create --name MACAL python=3.9
 $ pip install requirements.txt
 $ conda env create -f environment.yml
