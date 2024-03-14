@@ -3,6 +3,7 @@
 ## Installation
 
 ```.sh
+$ git clone 
 $ conda create --name MACAL python=3.9
 $ pip install requirements.txt
 $ conda env create -f environment.yml
