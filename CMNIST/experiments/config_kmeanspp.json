@@ -1,0 +1,14 @@
+{
+    "acquisition_function": "kmeanspp",
+    "kernel": "RBF",
+    "num_inducing_points": 100,
+    "dim_hidden": 200,
+    "dim_output": 1,
+    "depth": 2,
+    "negative_slope": -1,
+    "dropout_rate": 0.05,
+    "spectral_norm": 3.0,
+    "learning_rate": 0.001,
+    "batch_size": 64,
+    "epochs": 500
+}
