@@ -3,7 +3,6 @@
 ## Installation
 
 ```.sh
-$ git clone https://github.com/uqhwen2/MACAL.git
 $ conda create --name MACAL python=3.9
 $ conda activate MACAL
 $ pip install -r requirements.txt  # install the BMDAL baselines for benchmarking
