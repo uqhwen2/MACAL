@@ -1,0 +1,14 @@
+{
+    "acquisition_function": "rho",
+    "kernel": "Matern32",
+    "num_inducing_points": 100,
+    "dim_hidden": 200,
+    "dim_output": 1,
+    "depth": 3,
+    "negative_slope": -1,
+    "dropout_rate": 0.1,
+    "spectral_norm": 0.95,
+    "learning_rate": 0.001,
+    "batch_size": 100,
+    "epochs": 500
+}
