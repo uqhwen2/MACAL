@@ -42,7 +42,7 @@ $ pip install --upgrade torch==2.1.1 torchvision==0.16.1 -f https://download.pyt
 
 ## Started on TOY :teddy_bear: 
 
-This toy example runs on the one-dimensional toy dataset for 20 random seeds, the training relys on the exact Guassian process implemented by [GPyTorch](https://gpytorch.ai).
+This toy example runs on the one-dimensional toy dataset for 25 query steps and performs 20 random seeds for averaging, the training relys on the exact Guassian process implemented by [GPyTorch](https://gpytorch.ai).
 
 ### Training Random, Uncertainty, Symmetry and Uncertainty + Symmetry (MACAL_1.0 in essence)
 ```.sh
