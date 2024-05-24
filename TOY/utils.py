@@ -13,49 +13,6 @@ from sklearn.metrics import roc_curve, auc
 from scipy import interp
 
 
-def sparse_mx_to_torch_sparse_tensor(sparse_mx,cuda=False):
-    """Convert a scipy sparse matrix to a torch sparse tensor."""
-    sparse_mx = sparse_mx.tocoo().astype(np.float32)
-    indices = torch.from_numpy(
-        np.vstack((sparse_mx.row, sparse_mx.col)).astype(np.int64))
-    values = torch.from_numpy(sparse_mx.data)
-    shape = torch.Size(sparse_mx.shape)
-
-    sparse_tensor = torch.sparse.FloatTensor(indices, values, shape)
-    if cuda:
-        sparse_tensor = sparse_tensor.cuda()
-    return sparse_tensor
-
-def normalize(mx):
-	"""Row-normalize sparse matrix"""
-	rowsum = np.array(mx.sum(1))
-	r_inv = np.power(rowsum, -1).flatten()
-	r_inv[np.isinf(r_inv)] = 0.
-	r_mat_inv = sp.diags(r_inv)
-	mx = r_mat_inv.dot(mx)
-	return mx
-
-def load_data(path, name='BlogCatalog',exp_id='0',original_X = False, extra_str=""):
-	data = sio.loadmat(path+name+extra_str+'/'+name+exp_id+'.mat')
-	A = data['Network'] #csr matrix
-
-	# try:
-	# 	A = np.array(A.todense())
-	# except:
-	# 	pass
-
-	if not original_X:
-		X = data['X_100']
-	else:
-		X = data['Attributes']
-
-	Y1 = data['Y1']
-	Y0 = data['Y0']
-	T = data['T']
-
-	return X, A, T, Y1, Y0
-
-
 def wasserstein(x,y,p=0.5,lam=10,its=10,sq=False,backpropT=False,cuda=False):
     """return W dist between x and y"""
     '''distance matrix M'''
@@ -153,48 +110,4 @@ def pdist(sample_1, sample_2, norm=1, eps=1e-5):
         inner = torch.sum(differences, dim=2, keepdim=False)
         return (eps + inner) ** (1. / norm)
 
-# def sklearn_auc_score(t,ps):
-#     """
-#
-#     :param t: observed treatment (ground truth)
-#     :param ps: propensity score
-#     :return: auc score
-#     """
-#
-#     # Compute ROC curve and ROC area for each class
-#     fpr = dict()
-#     tpr = dict()
-#     roc_auc = dict()
-#     for i in range(n_classes):
-#         fpr[i], tpr[i], _ = roc_curve(y_test[:, i], y_score[:, i])
-#         roc_auc[i] = auc(fpr[i], tpr[i])
-#
-#     # Compute micro-average ROC curve and ROC area
-#     fpr["micro"], tpr["micro"], _ = roc_curve(y_test.ravel(), y_score.ravel())
-#     roc_auc["micro"] = auc(fpr["micro"], tpr["micro"])
-#
-#     plt.figure()
-#     lw = 2
-#     plt.plot(fpr[2], tpr[2], color='darkorange',
-#              lw=lw, label='ROC curve (area = %0.2f)' % roc_auc[2])
-#     plt.plot([0, 1], [0, 1], color='navy', lw=lw, linestyle='--')
-#     plt.xlim([0.0, 1.0])
-#     plt.ylim([0.0, 1.05])
-#     plt.xlabel('False Positive Rate')
-#     plt.ylabel('True Positive Rate')
-#     plt.title('Receiver operating characteristic example')
-#     plt.legend(loc="lower right")
-    # plt.show()
-    # plt.savefig('./figs/' + name + extra_str + str(exp_id) + 'ps_dist.pdf', bbox_inches='tight')
-
-#def distance_matrix(x,y,p=2):
-#    """ Computes the squared Euclidean distance between all pairs x in X, y in Y """
-#    x = x.squeeze()
-#    y = y.squeeze()
-#    C = -2*x.matmul(torch.t(y))
-#    nx = torch.sum(x.pow(2),dim=1).view(-1,1)
-#    ny = torch.sum(y.pow(2),dim=1).view(-1,1)
-#    D = (C + torch.t(ny)) + nx
-#    return D
-
-
+	    
