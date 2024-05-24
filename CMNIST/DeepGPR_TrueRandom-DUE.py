@@ -338,7 +338,7 @@ if num_trial == 1:
                                     y_train=combined_y_valid.cpu(),
                                     t_train=T_valid.cpu())
 
-        job_dir_path = Path('/data/uqhwen2/DataSpace/CMNIST-CNN/method_{}/seed_{}/step_{}'.format(config.get("acquisition_function"), seed, query_step))
+        job_dir_path = Path('saved_models/CMNIST-CNN/method_{}/seed_{}/step_{}'.format(config.get("acquisition_function"), seed, query_step))
 
         train_deep_kernel_gp(ds_train=train_dataset,
                              ds_valid=tune_dataset,
