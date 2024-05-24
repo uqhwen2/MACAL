@@ -44,16 +44,19 @@ $ pip install --upgrade torch==2.1.1 torchvision==0.16.1 -f https://download.pyt
 
 This toy example runs on the one-dimensional toy dataset, the training relys on the exact Guassian procee from Gpytorch.
 
-### Training MACAL (alpha=1)
+### Training Random, Uncertainty, Symmetry and Uncertainty + Symmetry (MACAL_1.0 in essence)
 ```.sh
 $ cd toy
-$ bash Sim.sh  # the test result in csv file is saved in folder "truesim"
+$ bash Random.sh
+$ bash Uncertainty.sh
+$ bash Symmetry.sh
+$ bash Sim.sh
 ```
 
 ### Visualization on PEHE
 ```.sh
 $ cd text_results
-$ run the plots.ipynb
+$ run the plots.ipynb which import all text reuslts from csv file, e.g., from truerandom/,  and save the figure under figures/
 ```
 
 
@@ -61,11 +64,11 @@ $ run the plots.ipynb
 
 Empirical training time for the downstream estimator DUE-CNN on NVIDIA A40 GPU: ~2h for 50 query steps in total for one simulation.
 
-### Training MACAL (alpha=2.5)
+### Training MACAL_2.5
 
 ```.sh
 $ cd CMNIST
-$ bash DeepGPR_TrueSim-DUE.sh
+$ bash DeepGPR_TrueSim-DUE.sh  # alpha=2.5 for MACAL_2.5, can simpyly change for other regularization level for ablation stuy.
 ```
 
 ### Visualization on PEHE
