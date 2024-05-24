@@ -318,8 +318,8 @@ list_1, list_0 = trt_ctr(T_train)
 # In[5]:
 
 
-warm_up = 10
-num_of_samples=50
+warm_up = 25
+num_of_samples=10
 
 idx_pool = np.random.permutation(len(combine_x_train))  # Global dataset index
 idx_sub_training = idx_pool[:warm_up]  # Global dataset index
