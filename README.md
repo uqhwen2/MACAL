@@ -1,6 +1,6 @@
 # MACAL
 
-We acknowledge the existing contributions from the wide community, the folders "bmdal_reg" and "causal_bald" are baselines and also estimators citing from existing literatures as follows:
+We acknowledge the existing contributions from the broad community, the folders "bmdal_reg" and "causal_bald" are baselines and also estimators citing from existing literatures as follows:
 
 BMDAL: "[Black-Box Batch Active Learning for Regression](https://arxiv.org/abs/2302.08981)":
 
@@ -26,7 +26,10 @@ Causal-BALD: [Paper](https://arxiv.org/abs/2111.02275) as
 }
 ```
 
+
 ## Installation
+
+### Testing Environment on 48GB NVIDIA A40 on Ubuntu 22.04 LTS platform where GPU training is enabled, otherwise the 12th Gen Intel i7-12700K 12-Core 20-Thread CPU is used
 
 ```.sh
 $ conda create --name MACAL python=3.9
