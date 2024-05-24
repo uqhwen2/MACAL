@@ -29,7 +29,7 @@ Causal-BALD: [Paper](https://arxiv.org/abs/2111.02275) as
 
 ## Installation
 
-### Testing Environment on 48GB NVIDIA A40 on Ubuntu 22.04 LTS platform where GPU training is enabled, otherwise the 12th Gen Intel i7-12700K 12-Core 20-Thread CPU is used
+Testing Environment: 48GB NVIDIA A40 on Ubuntu 22.04 LTS platform where GPU training is enabled, otherwise the 12th Gen Intel i7-12700K 12-Core 20-Thread CPU is used.
 
 ```.sh
 $ conda create --name MACAL python=3.9
