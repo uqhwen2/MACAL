@@ -15,7 +15,7 @@ BMDAL: "[Black-Box Batch Active Learning for Regression](https://arxiv.org/abs/2
     primaryClass={cs.LG}
 }
 ```
-Causal-BALD: [Paper](https://arxiv.org/abs/2111.02275) as
+Causal-BALD: [Causal-BALD: Deep Bayesian Active Learning of Outcomes to Infer Treatment-Effects from Observational Data](https://arxiv.org/abs/2111.02275) as
 
 ```bibtex
 @article{jesson2021causal,
