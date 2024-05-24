@@ -42,7 +42,7 @@ $ pip install --upgrade torch==2.1.1 torchvision==0.16.1 -f https://download.pyt
 
 ## Started on TOY :teddy_bear: 
 
-This toy example runs on the one-dimensional toy dataset, the training relys on the exact Guassian procee from Gpytorch.
+This toy example runs on the one-dimensional toy dataset for 20 random seeds, the training relys on the exact Guassian procee from Gpytorch.
 
 ### Training Random, Uncertainty, Symmetry and Uncertainty + Symmetry (MACAL_1.0 in essence)
 ```.sh
@@ -57,7 +57,7 @@ $ bash Sim.sh
 ```.sh
 $ cd text_results
 ```
-Then, run the ```plots.ipynb``` which imports all text reuslts from csv file, e.g., from truerandom/,  and save the generated figures under figures/.
+Then, run the ```plots.ipynb``` which imports all text reuslts from csv file, e.g., from truerandom/, averging 20 seeds, then save the generated figures with confidence interval under figures/.
 
 ## Example on CMNIST :framed_picture:
 
