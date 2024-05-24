@@ -1,7 +1,7 @@
 # MACAL
 
 ## Baselines and Downstream Estimators
-We acknowledge the existing contributions from the broad community, the folders "bmdal_reg" and "causal_bald" are baselines and also estimators citing from existing literatures as follows:
+We acknowledge the existing contributions from the broad community to promote the open-source AI, the folders "bmdal_reg" and "causal_bald" are baselines and also estimators citing from existing literatures as follows:
 
 BMDAL: "[Black-Box Batch Active Learning for Regression](https://arxiv.org/abs/2302.08981)":
 
