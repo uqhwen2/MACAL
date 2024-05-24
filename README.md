@@ -57,7 +57,7 @@ $ bash Sim.sh
 ```.sh
 $ cd text_results
 ```
-Then, run the ```plots.ipynb``` which import all text reuslts from csv file, e.g., from truerandom/,  and save the figure under figures/
+Then, run the ```plots.ipynb``` which imports all text reuslts from csv file, e.g., from truerandom/,  and save the generated figures under figures/.
 
 ## Example on CMNIST :framed_picture:
 
