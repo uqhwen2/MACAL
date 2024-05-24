@@ -41,6 +41,8 @@ $ pip install --upgrade torch==2.1.1 torchvision==0.16.1 -f https://download.pyt
 ```
 ## Example on CMNIST
 
+Empriical training time for the downstream estimator DUE-CNN: ~2h for 50 query steps in total for one simulation.
+
 ### Training MACAL
 
 ```.sh
