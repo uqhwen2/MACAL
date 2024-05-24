@@ -52,7 +52,7 @@ $ bash Uncertainty.sh
 $ bash Symmetry.sh
 $ bash Sim.sh
 ```
- ~0.5h for each of the methods to terminate for 20 seeds (default setting, for reproducing the result as depicted in the paper) in total (so <2h to let all four methods to terminate). Can consider reducing the seed to 10 to save some time, the convergence behaviour won't change to much.
+ ~0.5h for each of the methods to terminate for 20 seeds (default setting, for reproducing the result as depicted in the paper) in total, so <2h to let all four methods to terminate. For the sake of your valuable time, can consider reducing the seed to 10 or even 5 to significantly save time, the convergence behaviour won't deviate much.
 
 ### Visualization on PEHE
 ```.sh
