@@ -47,11 +47,12 @@ This toy example runs on the one-dimensional toy dataset for 25 query steps and 
 ### Training Random, Uncertainty, Symmetry and Uncertainty + Symmetry (MACAL_1.0 in essence)
 ```.sh
 $ cd TOY
-$ bash Random.sh
+$ bash Random.sh 
 $ bash Uncertainty.sh
 $ bash Symmetry.sh
 $ bash Sim.sh
 ```
+ ~0.5h for each of the methods to terminate for 20 seeds in total (so <2h to let all four methods to terminate). Can consider reducing the seed to 10 to save some time, the convergence behaviour won't change to much.
 
 ### Visualization on PEHE
 ```.sh
