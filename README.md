@@ -28,7 +28,7 @@ Causal-BALD: [Causal-BALD: Deep Bayesian Active Learning of Outcomes to Infer Tr
 ```
 
 
-## Installation
+## Installation :arrow_down:
 
 Testing Environment: 48GB NVIDIA A40 on Ubuntu 22.04 LTS platform where GPU training is enabled, otherwise the 12th Gen Intel i7-12700K 12-Core 20-Thread CPU is used.
 
@@ -46,7 +46,7 @@ This toy example runs on the one-dimensional toy dataset, the training relys on 
 
 ### Training Random, Uncertainty, Symmetry and Uncertainty + Symmetry (MACAL_1.0 in essence)
 ```.sh
-$ cd toy
+$ cd TOY
 $ bash Random.sh
 $ bash Uncertainty.sh
 $ bash Symmetry.sh
@@ -59,7 +59,7 @@ $ cd text_results
 ```
 Then, run the ```plots.ipynb``` which import all text reuslts from csv file, e.g., from truerandom/,  and save the figure under figures/
 
-## Example on CMNIST
+## Example on CMNIST :framed_picture:
 
 Empirical training time for the downstream estimator DUE-CNN on NVIDIA A40 GPU: ~2h for 50 query steps in total for one simulation.
 
