@@ -40,7 +40,7 @@ $ pip install .  # install the Causal-Bald baselines for benchmarking
 $ pip install --upgrade torch==2.1.1 torchvision==0.16.1 -f https://download.pytorch.org/whl/cu118/torch_stable.html
 ```
 
-## Started on TOY
+## Started on TOY :teddy_bear: 
 
 This toy example runs on the one-dimensional toy dataset, the training relys on the exact Guassian procee from Gpytorch.
 
