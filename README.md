@@ -39,11 +39,29 @@ $ pip install -r requirements.txt  # install the BMDAL baselines for benchmarkin
 $ pip install .  # install the Causal-Bald baselines for benchmarking
 $ pip install --upgrade torch==2.1.1 torchvision==0.16.1 -f https://download.pytorch.org/whl/cu118/torch_stable.html
 ```
+
+## Started on TOY
+
+This toy example runs on the one-dimensional toy dataset, the training relys on the exact Guassian procee from Gpytorch.
+
+### Training MACAL (alpha=1)
+```.sh
+$ cd toy
+$ bash Sim.sh  # the test result in csv file is saved in folder "truesim"
+```
+
+### Visualization on PEHE
+```.sh
+$ cd text_results
+$ run the plots.ipynb
+```
+
+
 ## Example on CMNIST
 
 Empirical training time for the downstream estimator DUE-CNN on NVIDIA A40 GPU: ~2h for 50 query steps in total for one simulation.
 
-### Training MACAL
+### Training MACAL (alpha=2.5)
 
 ```.sh
 $ cd CMNIST
