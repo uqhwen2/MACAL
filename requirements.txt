@@ -31,11 +31,9 @@ six==1.16.0
 termcolor==1.1.0
 threadpoolctl==3.0.0
 tomli==1.2.2
-torch
 typing-extensions==4.0.0
 urllib3==1.26.7
 xmltodict==0.12.0
 protobuf==3.20.3
-gpytorch
 catboost
 fs
