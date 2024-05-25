@@ -89,5 +89,7 @@ The figre will pop up automatically, and also saved locally under the CMNIST dir
 
 ```.sh
 $ cd embeddings
-$ python cmnist_cnn_all_plots.py
+$ python tsne_plot.py --method sim_2.5  # for MACAL_2.5
+$ python tsne_plot.py --method murho  # for Causal-Bald murho
+$ python tsne_plot.py --method lcmd  # for BMDAL LCMD
 ```
