@@ -262,7 +262,7 @@ if num_trial == 1:
             if len(row_index) == 1:
                 acquired_control.append(idx_remaining_0[row_index.item()])
                 acquired_treated.append(idx_remaining_1[col_index.item()])
-                print(criterion[row_index.item(), col_index.item()], criterion[row_index.item(), col_index.item()])
+                #print(criterion[row_index.item(), col_index.item()], criterion[row_index.item(), col_index.item()])
 
                 idx_sub_training_1, idx_remaining_1 = pool_updating(idx_remaining_1, idx_sub_training_1, [idx_remaining_1[col_index.item()]])
                 idx_sub_training_0, idx_remaining_0 = pool_updating(idx_remaining_0, idx_sub_training_0, [idx_remaining_0[row_index.item()]])
@@ -270,8 +270,8 @@ if num_trial == 1:
                 acquired_control.append(idx_remaining_0[row_index[0].item()])
                 acquired_treated.append(idx_remaining_1[col_index[0].item()])
 
-                print(criterion[row_index[0].item(), col_index[0].item()],
-                      criterion[row_index[1].item(), col_index[1].item()])
+                #print(criterion[row_index[0].item(), col_index[0].item()],
+                #      criterion[row_index[1].item(), col_index[1].item()])
 
                 idx_sub_training_1, idx_remaining_1 = pool_updating(idx_remaining_1, idx_sub_training_1,
                                                                     [idx_remaining_1[col_index[0].item()]])
