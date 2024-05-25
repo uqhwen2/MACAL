@@ -94,3 +94,38 @@ $ python tsne_plot.py --method murho  # for Causal-Bald murho
 $ python tsne_plot.py --method lcmd  # for BMDAL LCMD
 ```
 Plots for 50 query steps are saved locally, e.g.,  under ```embeddings/tsne/truesim_2.5``` for MACAL_2.5.
+
+## Example on IBM :computer:
+
+:exclamation::exclamation::exclamation: Due to uploading file limit, to test the IBM dataset please download the file from [the anonymous link.](https://drive.google.com/drive/folders/1fKNN-IaizwpEVUuNLtsNGOI0utahN2Hr), and place the data under the ```IBM/dataset/ibm```:exclamation::exclamation::exclamation:
+
+#### Training MACAL_2.5
+
+```.sh
+$ cd CMNIST
+$ bash DeepGPR_TrueSim-DUE.sh  # alpha=2.5 for MACAL_2.5, can simpyly change for other regularization level for ablation stuy.
+```
+
+#### Training Causal-Bald-MURHO
+
+```.sh
+$ bash DeepGPR_TrueMURHO-DUE.sh
+```
+
+#### Visualization on PEHE
+
+```.sh
+$ cd text_results
+$ python cmnist_cnn_all_plots.py
+```
+The figre will pop up automatically, and also saved locally under the CMNIST directory
+
+#### Visualization on TSNE
+
+```.sh
+$ cd embeddings
+$ python tsne_plot.py --method sim_2.5  # for MACAL_2.5
+$ python tsne_plot.py --method murho  # for Causal-Bald murho
+$ python tsne_plot.py --method lcmd  # for BMDAL LCMD
+```
+Plots for 50 query steps are saved locally, e.g.,  under ```embeddings/tsne/truesim_2.5``` for MACAL_2.5.
