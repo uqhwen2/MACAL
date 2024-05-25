@@ -4,6 +4,8 @@ for i in 0
 do
 	for j in $(seq 0 99)
 	do
-    	python DeepGPR_TrueRandom-DUE.py --seed $j
+    	CUDA_VISIBLE_DEVICES=0 \
+        python DeepGPR_TrueRandom-DUE.py \
+	--seed $j
 	done
 done
