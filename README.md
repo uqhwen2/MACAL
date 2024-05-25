@@ -71,8 +71,23 @@ $ cd CMNIST
 $ bash DeepGPR_TrueSim-DUE.sh  # alpha=2.5 for MACAL_2.5, can simpyly change for other regularization level for ablation stuy.
 ```
 
+### Training Causal-Bald-MURHO
+
+```.sh
+$ bash DeepGPR_TrueMURHO-DUE.sh
+```
+
 ### Visualization on PEHE
 
 ```.sh
 $ cd text_results
+$ python cmnist_cnn_all_plots.py
+```
+The figre will pop up automatically, and also saved locally under the CMNIST directory
+
+### Visualization on TSNE
+
+```.sh
+$ cd embeddings
+$ python cmnist_cnn_all_plots.py
 ```
