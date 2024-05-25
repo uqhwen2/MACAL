@@ -18,8 +18,8 @@ def trt_ctr(treatment):
 
 def train_test_splitting(seed, device):
 
-    ihdp_test = np.load('dataset/ibm/hill_ihdp_RSB_test-100.npz')
-    ihdp_train = np.load('dataset/ibm/hill_ihdp_RSB_train-100.npz')
+    ihdp_test = np.load('dataset/ibm/ibm_test.npz')
+    ihdp_train = np.load('dataset/ibm/ibm_train.npz')
 
     # Convert back to PyTorch tensors if needed
     combine_x_train = torch.from_numpy(ihdp_train['x'][:, :, seed])
