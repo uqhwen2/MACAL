@@ -356,43 +356,6 @@ if num_trial == 1:
         labels = data['labels']
         print("Embedding and labels reloaded successfully")
 
-        # Plot the t-SNE visualization with different colors for different datasets
-        plt.figure(figsize=(8, 6))
-        plt.scatter(X_embedded[labels == 1, 0], X_embedded[labels == 1, 1], c='b', label='Treated')
-        plt.scatter(X_embedded[labels == 0, 0], X_embedded[labels == 0, 1], c='r', label='Control')
-        plt.title('t-SNE Visualization')
-        plt.xlabel('t-SNE Component 1')
-        plt.ylabel('t-SNE Component 2')
-        plt.legend()
-        plt.grid(True)
-        plt.tight_layout()
-        # Save the plot to a PDF file
-        plt.savefig('tsne/truesim_{}/tsne_visualization_{}.pdf'.format(args.alpha, query_step), bbox_inches='tight')
-#        plt.clf()  # or plt.cla() if you only want to clear the axes
-        plt.close()
-
-        print("Ploting the density")
-        # Plot density along each dimension
-        plt.figure(figsize=(12, 6))
-        plt.subplot(1, 2, 1)
-        plt.hist(X_embedded[labels == 1, 0], bins=100, color='b', alpha=0.5, label='Treated')
-        plt.hist(X_embedded[labels == 0, 0], bins=100, color='r', alpha=0.5, label='Control')
-#        plt.title('Density along Dimension 1')
-        plt.xlabel('Dimension 1')
-        plt.ylabel('Density')
-
-        plt.subplot(1, 2, 2)
-        plt.hist(X_embedded[labels == 1, 1], bins=100, color='b', alpha=0.5, label='Treated')
-        plt.hist(X_embedded[labels == 0, 1], bins=100, color='r', alpha=0.5, label='Control')
-#        plt.title('Density along Dimension 2')
-        plt.xlabel('Dimension 2')
-        plt.ylabel('Density')
-
-        plt.tight_layout()
-        # Save the density plots to a PDF file
-        plt.savefig('tsne/truesim_{}/density_visualization_{}.pdf'.format(args.alpha, query_step), bbox_inches='tight')
-        plt.clf()
-
         # Concatenate vertically and shuffle randomly for the sub training
         combine_train_idx = np.concatenate([idx_sub_training_1, idx_sub_training_0], axis=0)
         np.random.shuffle(combine_train_idx)
