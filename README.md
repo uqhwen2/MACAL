@@ -64,6 +64,10 @@ Then, run the ```plots.ipynb``` which imports all text reuslts from csv file, e.
 
 Empirical training time for the downstream estimator DUE-CNN on NVIDIA A40 GPU: ~2h for 50 query steps in total for one simulation.
 
+### Operating on Multiple GPU:
+
+In each of the shell file to run the method, we have ```CUDA_VISIBLE_DEVICES=0``` defaultly for cuda:0, so if there are multiple GPUs, just modify the number to be corresponding GPU number.
+
 #### Training MACAL_2.5
 
 ```.sh
