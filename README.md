@@ -44,7 +44,7 @@ $ pip install --upgrade torch==2.1.1 torchvision==0.16.1 -f https://download.pyt
 
 This toy example runs on the one-dimensional toy dataset for 25 query steps and performs 20 random seeds for averaging, the training relys on the exact Guassian process implemented by [GPyTorch](https://gpytorch.ai).
 
-### Training Random, Uncertainty, Symmetry and Uncertainty + Symmetry (MACAL_1.0 in essence)
+#### Training Random, Uncertainty, Symmetry and Uncertainty + Symmetry (MACAL_1.0 in essence)
 ```.sh
 $ cd TOY
 $ bash Random.sh 
@@ -54,7 +54,7 @@ $ bash Sim.sh
 ```
 ~1h for each of the methods to terminate for 20 seeds (default setting, for strictly reproducing the result as depicted in the paper) in total, so <4h to let all four methods terminate. For the sake of your valuable time, consider reducing the number of the seeds to 5 to significantly save time, the convergence behaviour won't deviate much, e.g., modify ```for j in $(seq 0 19) in Random.sh``` to be ```for j in $(seq 0 4)``` for 5 random seeds.
 
-### Visualization on PEHE
+#### Visualization on PEHE
 ```.sh
 $ cd text_results
 ```
@@ -64,20 +64,20 @@ Then, run the ```plots.ipynb``` which imports all text reuslts from csv file, e.
 
 Empirical training time for the downstream estimator DUE-CNN on NVIDIA A40 GPU: ~2h for 50 query steps in total for one simulation.
 
-### Training MACAL_2.5
+#### Training MACAL_2.5
 
 ```.sh
 $ cd CMNIST
 $ bash DeepGPR_TrueSim-DUE.sh  # alpha=2.5 for MACAL_2.5, can simpyly change for other regularization level for ablation stuy.
 ```
 
-### Training Causal-Bald-MURHO
+#### Training Causal-Bald-MURHO
 
 ```.sh
 $ bash DeepGPR_TrueMURHO-DUE.sh
 ```
 
-### Visualization on PEHE
+#### Visualization on PEHE
 
 ```.sh
 $ cd text_results
@@ -85,7 +85,7 @@ $ python cmnist_cnn_all_plots.py
 ```
 The figre will pop up automatically, and also saved locally under the CMNIST directory
 
-### Visualization on TSNE
+#### Visualization on TSNE
 
 ```.sh
 $ cd embeddings
