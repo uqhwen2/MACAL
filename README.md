@@ -118,7 +118,7 @@ $ bash DeepGPR_TrueMURHO-DUE.sh
 $ cd text_results
 $ python ibm_all_plots.py
 ```
-The figre will pop up automatically, and also saved locally under the CMNIST directory
+The figre will pop up automatically, and also saved locally under the IBM directory
 
 #### Visualization on TSNE
 
@@ -128,3 +128,36 @@ $ python tsne_plot.py --method sim_2.5  # for MACAL_2.5
 $ python tsne_plot.py --method murho  # for Causal-Bald murho
 $ python tsne_plot.py --method lcmd  # for BMDAL LCMD
 ```
+
+## Example on IHDP :memo:
+
+#### Training MACAL_2.5
+
+```.sh
+$ cd IHDP
+$ bash DeepGPR_TrueSim-DUE.sh  # alpha=2.5 for MACAL_2.5, can simpyly change for other regularization level for ablation stuy.
+```
+
+#### Training Causal-Bald-MURHO
+
+```.sh
+$ bash DeepGPR_TrueMURHO-DUE.sh
+```
+
+#### Visualization on PEHE
+
+```.sh
+$ cd text_results
+$ python ihdp_all_plots.py
+```
+The figre will pop up automatically, and also saved locally under the IHDP directory
+
+#### Visualization on TSNE
+
+```.sh
+$ cd embeddings
+$ python tsne_plot.py --method sim_2.5  # for MACAL_2.5
+$ python tsne_plot.py --method murho  # for Causal-Bald murho
+$ python tsne_plot.py --method lcmd  # for BMDAL LCMD
+```
+
