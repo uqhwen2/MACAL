@@ -111,7 +111,7 @@ plt.legend(loc='upper center', bbox_to_anchor=(0.5, 1.2), ncol=9)
 plt.xticks(rotation=25, ticks=list(range(0, 50, 3)), labels=list(range(50, 2501, 150)))  # Adjust the rotation angle as needed
 
 # Save the figure
-plt.savefig('CMNIST-CNN-PEHE.pdf', bbox_inches='tight')  # Change the filename and extension as needed
+plt.savefig('IBM-PEHE.pdf', bbox_inches='tight')  # Change the filename and extension as needed
 
 # Show the plot
 plt.show()
