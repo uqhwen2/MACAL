@@ -81,7 +81,7 @@ $ bash DeepGPR_TrueSim-DUE.sh  # alpha=2.5 for MACAL_2.5, can simpyly change for
 $ bash DeepGPR_TrueMURHO-DUE.sh
 ```
 
-#### Visualization on PEHE
+#### Visualization of the PEHE on Growing Training Set
 
 ```.sh
 $ cd text_results
@@ -89,7 +89,7 @@ $ python cmnist_cnn_all_plots.py
 ```
 The figre will pop up automatically, and also saved locally under the CMNIST directory
 
-#### Visualization on TSNE
+#### Visualization of the Growing Training Set via TSNE
 
 ```.sh
 $ cd embeddings
@@ -118,7 +118,7 @@ $ bash DeepGPR_TrueSim-DUE.sh  # alpha=2.5 for MACAL_2.5, can simpyly change for
 $ bash DeepGPR_TrueMURHO-DUE.sh
 ```
 
-#### Visualization on PEHE
+#### Visualization of the PEHE on Growing Training Set
 
 ```.sh
 $ cd text_results
@@ -126,7 +126,7 @@ $ python ibm_all_plots.py
 ```
 The figre will pop up automatically, and also saved locally under the IBM directory
 
-#### Visualization on TSNE
+#### Visualization of the Growing Training Set via TSNE
 
 ```.sh
 $ cd embeddings
@@ -154,7 +154,7 @@ $ bash DeepGPR_TrueSim-DUE.sh  # alpha=2.5 for MACAL_2.5, can simpyly change for
 $ bash DeepGPR_TrueMURHO-DUE.sh
 ```
 
-#### Visualization on PEHE
+#### Visualization of the PEHE on Growing Training Set
 
 ```.sh
 $ cd text_results
@@ -162,7 +162,7 @@ $ python ihdp_all_plots.py
 ```
 The figre will pop up automatically, and also saved locally under the IHDP directory
 
-#### Visualization on TSNE
+#### Visualization of the Growing Training Set via TSNE
 
 ```.sh
 $ cd embeddings
