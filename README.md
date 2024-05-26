@@ -87,7 +87,7 @@ $ bash DeepGPR_TrueMURHO-DUE.sh
 $ cd text_results
 $ python cmnist_cnn_all_plots.py
 ```
-The figre will pop up automatically, and also saved locally under the CMNIST directory
+The figure will pop up automatically, and also saved locally under the CMNIST directory
 
 #### Visualization of the Growing Training Set via TSNE
 
@@ -124,7 +124,7 @@ $ bash DeepGPR_TrueMURHO-DUE.sh
 $ cd text_results
 $ python ibm_all_plots.py
 ```
-The figre will pop up automatically, and also saved locally under the IBM directory
+The figure will pop up automatically, and also saved locally under the IBM directory
 
 #### Visualization of the Growing Training Set via TSNE
 
@@ -160,7 +160,7 @@ $ bash DeepGPR_TrueMURHO-DUE.sh
 $ cd text_results
 $ python ihdp_all_plots.py
 ```
-The figre will pop up automatically, and also saved locally under the IHDP directory
+The figure will pop up automatically, and also saved locally under the IHDP directory
 
 #### Visualization of the Growing Training Set via TSNE
 
