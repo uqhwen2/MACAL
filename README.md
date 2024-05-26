@@ -62,6 +62,8 @@ Then, run the ```plots.ipynb``` which imports all text reuslts from csv file, e.
 
 ## Mapping Convention for the Method (in Paper) and Its Alias (in Code Script):
 
+The following aliases are used in the shell file, e.g., ```DeepGPR_TrueSim-DUE.sh```, to call the corresponded methods:
+
 | Method          | In Script       |
 |-----------------|-----------------|
 | $\mu$ BALD      | mu              |
