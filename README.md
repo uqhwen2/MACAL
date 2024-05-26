@@ -81,7 +81,7 @@ $ bash DeepGPR_TrueSim-DUE.sh  # alpha=2.5 for MACAL_2.5, can simpyly change for
 $ bash DeepGPR_TrueMURHO-DUE.sh
 ```
 
-#### Visualization of the Risk ($\epsilon_{\text{PEHE}}$) on Growing Training Set
+#### Visualization of the Risk ($\epsilon_{\text{PEHE}}$) for 50 AL Steps
 
 ```.sh
 $ cd text_results
@@ -118,7 +118,7 @@ $ bash DeepGPR_TrueSim-DUE.sh  # alpha=2.5 for MACAL_2.5, can simpyly change for
 $ bash DeepGPR_TrueMURHO-DUE.sh
 ```
 
-#### Visualization of the Risk ($\epsilon_{\text{PEHE}}$) on Growing Training Set
+#### Visualization of the Risk ($\epsilon_{\text{PEHE}}$) for 50 AL Stpes
 
 ```.sh
 $ cd text_results
@@ -154,7 +154,7 @@ $ bash DeepGPR_TrueSim-DUE.sh  # alpha=2.5 for MACAL_2.5, can simpyly change for
 $ bash DeepGPR_TrueMURHO-DUE.sh
 ```
 
-#### Visualization of the Risk ($\epsilon_{\text{PEHE}}$) on Growing Training Set
+#### Visualization of the Risk ($\epsilon_{\text{PEHE}}$) for 47 AL Steps
 
 ```.sh
 $ cd text_results
