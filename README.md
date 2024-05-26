@@ -62,7 +62,7 @@ Then, run the ```plots.ipynb``` which imports all text reuslts from csv file, e.
 
 ## Example on CMNIST :framed_picture:
 
-Empirical training time for the downstream estimator DUE-CNN on NVIDIA A40 GPU: ~2h for 50 query steps in total for one simulation.
+Empirical training time for the downstream estimator DUE-CNN on NVIDIA A40 GPU: ~2h for 50 query steps in total for one simulation, we average over 10 random seeds for a general perfornamce.
 
 ### Operating on Multiple GPU devices:
 
@@ -103,6 +103,8 @@ Plots for 50 query steps are saved locally, e.g.,  under ```embeddings/tsne/true
 
 :exclamation::exclamation::exclamation: Due to uploading file limit, to test the IBM dataset, which is a public available asset from [here](https://github.com/IBM-HRL-MLHLS/IBM-Causal-Inference-Benchmarking-Framework/blob/master/README.md). Please download the file from [the anonymous link](https://drive.google.com/drive/folders/1fKNN-IaizwpEVUuNLtsNGOI0utahN2Hr), and place the data under the ```IBM/dataset/ibm/```:exclamation::exclamation::exclamation:
 
+Here we average over 10 random seeds for a general perfornamce:
+
 #### Training MACAL_2.5
 
 ```.sh
@@ -134,6 +136,8 @@ $ python tsne_plot.py --method lcmd  # for BMDAL LCMD
 ```
 
 ## Example on IHDP :memo:
+
+Here we average over 100 random seeds for a general perfornamce:
 
 #### Training MACAL_2.5
 
