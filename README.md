@@ -75,7 +75,7 @@ $ cd CMNIST
 $ bash DeepGPR_TrueSim-DUE.sh  # alpha=2.5 for MACAL_2.5, can simpyly change for other regularization level for ablation stuy.
 ```
 
-#### Training $\mu\rho$ BALD
+#### Training $\mu\rho$BALD
 
 ```.sh
 $ bash DeepGPR_TrueMURHO-DUE.sh
@@ -112,7 +112,7 @@ $ cd IBM
 $ bash DeepGPR_TrueSim-DUE.sh  # alpha=2.5 for MACAL_2.5, can simpyly change for other regularization level for ablation stuy.
 ```
 
-#### Training \mu\rho BALD
+#### Training $\mu\rho$BALD
 
 ```.sh
 $ bash DeepGPR_TrueMURHO-DUE.sh
@@ -148,7 +148,7 @@ $ cd IHDP
 $ bash DeepGPR_TrueSim-DUE.sh  # alpha=2.5 for MACAL_2.5, can simpyly change for other regularization level for ablation stuy.
 ```
 
-#### Training Causal-Bald-MURHO
+#### Training $\mu\rho$BALD
 
 ```.sh
 $ bash DeepGPR_TrueMURHO-DUE.sh
@@ -177,9 +177,9 @@ Plots for 50 query steps are saved locally, e.g.,  under ```embeddings/tsne/true
 
 | Method          | Naming in Script|
 |-----------------|-----------------|
-| \mu BALD        | mu              |
-| \rho BALD       | rho             |
-| \mu\rho BALD    | murho           |
+| $\mu$BALD       | mu              |
+| $\rho$BALD      | rho             |
+| $\mu\rho$BALD   | murho           |
 | QHTE            | qhte            |
 | Random          | rando           |
 | LCMD            | lcmd            |
