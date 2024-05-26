@@ -60,6 +60,20 @@ $ cd text_results
 ```
 Then, run the ```plots.ipynb``` which imports all text reuslts from csv file, e.g., from truerandom/, averging 20 seeds, then save the generated figures with confidence interval under figures/.
 
+## Mapping Convention for the Method (in Paper) and Its Alias (in Code Script):
+
+| Method          | In Script       |
+|-----------------|-----------------|
+| $\mu$ BALD      | mu              |
+| $\rho$ BALD     | rho             |
+| $\mu\rho$ BALD  | murho           |
+| QHTE            | qhte            |
+| Random          | random          |
+| LCMD            | lcmd            |
+| BADGE           | kmeanspp        |
+| BAIT            | bait            |
+| MACAL_2.5       | sim_2.5         |
+
 ## Example on CMNIST :framed_picture:
 
 Empirical training time for the downstream estimator DUE-CNN on NVIDIA A40 GPU: ~2h for 50 query steps in total for one simulation, we average over 10 random seeds for a general perfornamce.
@@ -172,17 +186,3 @@ $ python tsne_plot.py --method lcmd  # for BMDAL LCMD
 ```
 
 Plots for 50 query steps are saved locally, e.g.,  under ```embeddings/tsne/truesim_2.5``` for MACAL_2.5.
-
-## Mapping Convention for the Methods (in Paper) and Its Alias (in Code Script):
-
-| Method          | In Script       |
-|-----------------|-----------------|
-| $\mu$ BALD      | mu              |
-| $\rho$ BALD     | rho             |
-| $\mu\rho$ BALD  | murho           |
-| QHTE            | qhte            |
-| Random          | random          |
-| LCMD            | lcmd            |
-| BADGE           | kmeanspp        |
-| BAIT            | bait            |
-| MACAL_2.5       | sim_2.5         |
