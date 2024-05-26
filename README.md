@@ -173,15 +173,15 @@ $ python tsne_plot.py --method lcmd  # for BMDAL LCMD
 
 Plots for 50 query steps are saved locally, e.g.,  under ```embeddings/tsne/truesim_2.5``` for MACAL_2.5.
 
-## Mapping Convention for the Methods and Code Name:
+## Mapping Convention for the Methods (in Paper) and Its Alias (in Code Script):
 
-| Method          | Naming in Script|
+| Method          | In Script       |
 |-----------------|-----------------|
 | $\mu$ BALD      | mu              |
 | $\rho$ BALD     | rho             |
 | $\mu\rho$ BALD  | murho           |
 | QHTE            | qhte            |
-| Random          | rando           |
+| Random          | random          |
 | LCMD            | lcmd            |
 | BADGE           | kmeanspp        |
 | BAIT            | bait            |
