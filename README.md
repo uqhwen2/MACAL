@@ -75,7 +75,7 @@ $ cd CMNIST
 $ bash DeepGPR_TrueSim-DUE.sh  # alpha=2.5 for MACAL_2.5, can simpyly change for other regularization level for ablation stuy.
 ```
 
-#### Training $\mu\rho$BALD
+#### Training $\mu\rho$ BALD
 
 ```.sh
 $ bash DeepGPR_TrueMURHO-DUE.sh
