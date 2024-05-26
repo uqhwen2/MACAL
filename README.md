@@ -155,7 +155,7 @@ Plots for 50 query steps are saved locally, e.g.,  under ```embeddings/tsne/true
 
 ## Example on IHDP :memo:
 
-Here we average over 100 random seeds for a general perfornamce:
+Heads-up: Here we average over 100 random seeds for a general perfornamce. Note, that all the trained models at each query step are save under ```saved_models/``` folder, which can cause a stargering consumed storage for large size random seeds. So, consider move the  ```job_dir_path = Path('saved_models/IHDP/method_{}/seed_{}/step_{}'.format(config.get("acquisition_function"), seed, query_step))``` to a place which is large enough when running IHDP.
 
 #### Training MACAL_2.5
 
