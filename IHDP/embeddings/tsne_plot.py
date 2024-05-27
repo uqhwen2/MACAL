@@ -5,7 +5,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--method', type=str, default='sim_2.5')
 args = parser.parse_args()
 
-for query_step in range(50):
+for query_step in range(47):
     # To reload the embedding later
     # print("Reloading the embedding from file")
     data = np.load('true{}/embedding_and_labels_{}.npz'.format(args.method, query_step))
