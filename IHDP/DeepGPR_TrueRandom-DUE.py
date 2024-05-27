@@ -26,6 +26,7 @@ with open('experiments/config_random.json', 'r') as file:
     config = json.load(file)
 
 from torch.utils.data import Dataset
+from sklearn.manifold import TSNE
 
 from models.utils import train_test_splitting
 
