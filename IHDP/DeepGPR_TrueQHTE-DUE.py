@@ -272,16 +272,16 @@ if num_trial == 1:
         print("Embedding complete")
 
         # Save the embedding and labels to a single file
-        np.savez('embeddings/true{}/embedding_and_labels_{}.npz'.format(args.bmdal, query_step), X_embedded=X_embedded_, labels=labels_)
+        np.savez('embeddings/trueqhte/embedding_and_labels_{}.npz'.format(query_step), X_embedded=X_embedded_, labels=labels_)
         print("Embedding and labels saved to embedding_and_labels.npz")
 
         # To reload the embedding and labels later
         print("Reloading the embedding and labels from file")
-        data = np.load('embeddings/true{}/embedding_and_labels_{}.npz'.format(args.bmdal, query_step))
+        data = np.load('embeddings/trueqhte/embedding_and_labels_{}.npz'.format(query_step))
         X_embedded = data['X_embedded']
         labels = data['labels']
         print("Embedding and labels reloaded successfully")
-
+        
         # Concatenate vertically and shuffle randomly for the sub training
         combine_train_idx = np.concatenate([idx_sub_training_1, idx_sub_training_0], axis=0)
         np.random.shuffle(combine_train_idx)
