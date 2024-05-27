@@ -25,6 +25,8 @@ from causal_bald.library import acquisitions
 from models.nn_model import nnModel_1, nnModel_0
 from torch.utils import data
 
+from sklearn.manifold import TSNE
+
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--seed', type=int, default=0)
