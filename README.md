@@ -187,4 +187,4 @@ $ python tsne_plot.py --method murho  # for Causal-Bald murho
 $ python tsne_plot.py --method lcmd  # for BMDAL LCMD
 ```
 
-Plots for 50 query steps are saved locally, e.g.,  under ```embeddings/tsne/truesim_2.5``` for MACAL_2.5.
+Plots for 47 query steps are saved locally, e.g.,  under ```embeddings/tsne/truesim_2.5``` for MACAL_2.5.
