@@ -258,29 +258,29 @@ if num_trial == 1:
         # Do t-SNE visualization for the updataed dataset
         # Concatenate the data matrices
 
-#        X = np.vstack([train_x_1.cpu(), train_x_0.cpu()])
-#
-#        # Create labels for the data points
-#        labels_ = np.ones(X.shape[0])
-#        labels_[train_x_1.shape[0]:] = 0  # Set labels for control x_0 as 0
-#
-#        print("Ploting the t-SNE")
-#        # Perform t-SNE
-#        tsne = TSNE(n_components=2, random_state=args.seed)
-#        print("Initializing the tsne function to call")
-#        X_embedded_ = tsne.fit_transform(X)
-#        print("Embedding complete")
-#
-#        # Save the embedding and labels to a single file
-#        np.savez('embeddings/trueqhte/embedding_and_labels_{}.npz'.format(query_step), X_embedded=X_embedded_, labels=labels_)
-#        print("Embedding and labels saved to embedding_and_labels.npz")
-#
-#        # To reload the embedding and labels later
-#        print("Reloading the embedding and labels from file")
-#        data = np.load('embeddings/trueqhte/embedding_and_labels_{}.npz'.format(query_step))
-#        X_embedded = data['X_embedded']
-#        labels = data['labels']
-#        print("Embedding and labels reloaded successfully")
+        X = np.vstack([train_x_1.cpu(), train_x_0.cpu()])
+
+        # Create labels for the data points
+        labels_ = np.ones(X.shape[0])
+        labels_[train_x_1.shape[0]:] = 0  # Set labels for control x_0 as 0
+
+        print("Ploting the t-SNE")
+        # Perform t-SNE
+        tsne = TSNE(n_components=2, random_state=args.seed)
+        print("Initializing the tsne function to call")
+        X_embedded_ = tsne.fit_transform(X)
+        print("Embedding complete")
+
+        # Save the embedding and labels to a single file
+        np.savez('embeddings/true{}/embedding_and_labels_{}.npz'.format(args.bmdal, query_step), X_embedded=X_embedded_, labels=labels_)
+        print("Embedding and labels saved to embedding_and_labels.npz")
+
+        # To reload the embedding and labels later
+        print("Reloading the embedding and labels from file")
+        data = np.load('embeddings/true{}/embedding_and_labels_{}.npz'.format(args.bmdal, query_step))
+        X_embedded = data['X_embedded']
+        labels = data['labels']
+        print("Embedding and labels reloaded successfully")
 
         # Concatenate vertically and shuffle randomly for the sub training
         combine_train_idx = np.concatenate([idx_sub_training_1, idx_sub_training_0], axis=0)
