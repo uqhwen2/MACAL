@@ -235,16 +235,17 @@ if num_trial == 1:
         # Perform t-SNE
         tsne = TSNE(n_components=2, random_state=args.seed)
         print("Initializing the tsne function to call")
+
         X_embedded_ = tsne.fit_transform(X)
         print("Embedding complete")
-
+ 
         # Save the embedding and labels to a single file
-        np.savez('embeddings/true{}/embedding_and_labels_{}.npz'.format(args.bmdal, query_step), X_embedded=X_embedded_, labels=labels_)
+        np.savez('embeddings/true{}/embedding_and_labels_{}.npz'.format(args.causalbald, query_step), X_embedded=X_embedded_, labels=labels_)
         print("Embedding and labels saved to embedding_and_labels.npz")
 
         # To reload the embedding and labels later
         print("Reloading the embedding and labels from file")
-        data = np.load('embeddings/true{}/embedding_and_labels_{}.npz'.format(args.bmdal, query_step))
+        data = np.load('embeddings/true{}/embedding_and_labels_{}.npz'.format(args.causalbald, query_step))
         X_embedded = data['X_embedded']
         labels = data['labels']
         print("Embedding and labels reloaded successfully")
