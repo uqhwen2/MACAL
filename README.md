@@ -86,6 +86,8 @@ In each of the shell file to run the method, we have ```CUDA_VISIBLE_DEVICES=0``
 
 #### Training MACAL_2.5
 
+The initial execution will download the MNIST dataset from public available source, please enable Internet on your server, otherwise will run into error.
+
 ```.sh
 $ cd CMNIST
 $ bash DeepGPR_TrueSim-DUE.sh  # alpha=2.5 for MACAL_2.5, can simpyly change for other regularization level for ablation stuy.
