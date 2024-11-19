@@ -1,5 +1,6 @@
-## This code repo contains the implementation for the accepted paper, titled "Progressive Generalization Risk Reduction for Data-Efficient Causal Effect Estimation", by KDD'25.
-##  A friendly note is that the code contains many redundancy and NOT fully optimized for Readibility, but the following instructions are good enough for key results reproduction as tested by myself mutiple times on many platforms :).
+## This code repo contains the implementation for the accepted paper, titled "[Progressive Generalization Risk Reduction for Data-Efficient Causal Effect Estimation](https://arxiv.org/abs/2411.11256)", by KDD'25. 
+
+#A friendly note is that the code contains many redundancy and NOT fully optimized for Readibility, but the following instructions are good enough for key results reproduction as tested by myself mutiple times on many platforms :). Clearning is underway to optimize the readibility of the code.
 
 # MACAL
 
